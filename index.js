@@ -14,7 +14,7 @@ import { UserController, PostController } from './controllers/index.js';
 import {postCreateValidation} from "./validations/post.js";
 // Connect to MongoDB
 mongoose
-    .connect('mongodb+srv://avoit:wwwwww@cluster0.5kzzvkn.mongodb.net/blog?retryWrites=true&w=majority')
+    .connect('mongodb')
     .then(() => console.log('DB IS CONNECTED'))
     .catch((err) => console.log('DB IS DISCONNECTED', err));
 
